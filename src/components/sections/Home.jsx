@@ -1,4 +1,5 @@
 import RevealOnScroll from '../RevealOnScroll'
+import imageProfile from '../../assets/profile.png'
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ const Home = () => {
       </RevealOnScroll>
       <div>
         <img
-          src="/profile.png"
+          src={imageProfile}
           alt="Profile"
           className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer"
         />

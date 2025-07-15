@@ -42,8 +42,8 @@ const Home = () => {
       </RevealOnScroll>
       <div>
         <img
-          src="../../Profile1.png"
-          alt="Hero"
+          src="/profile.png"
+          alt="Profile"
           className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer"
         />
       </div>

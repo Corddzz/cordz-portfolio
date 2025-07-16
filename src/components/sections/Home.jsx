@@ -5,10 +5,20 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-evenly relative bg-[#1f284d]"
+      className="min-h-screen flex items-center justify-evenly relative bg-[#1f284d] sm:flex-col lg:flex-row"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
+        <div className="sm:mb-3 sm:mt-25 lg:mt-0">
+          <img
+            src={imageProfile}
+            alt="Profile"
+            className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer"
+          />
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <div className="text-center z-10 px-4 shrink">
           <h1 className="text-[#eff8f7] text-5xl md:text-7xl font-bold mb-4 p-3 cursor-default">
             My <span className="text-[#ef4442]">Portfolio</span>
           </h1>
@@ -41,13 +51,6 @@ const Home = () => {
           </div>
         </div>
       </RevealOnScroll>
-      <div>
-        <img
-          src={imageProfile}
-          alt="Profile"
-          className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer"
-        />
-      </div>
     </section>
   )
 }

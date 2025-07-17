@@ -1,6 +1,12 @@
 /* eslint react/prop-types: 0 */
 
 import { useEffect, useState } from 'react'
+import {
+  HomeIcon,
+  UserIcon,
+  FolderIcon,
+  PhoneIcon,
+} from '@heroicons/react/24/outline'
 
 const Navbar = ({ menu, setMenu }) => {
   useEffect(() => {
@@ -29,30 +35,44 @@ const Navbar = ({ menu, setMenu }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
-            >
-              Home
-            </a>
-            <a
-              href="#about"
-              className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
-            >
-              About
-            </a>
-            <a
-              href="#projects"
-              className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
-            >
-              Contact
-            </a>
+            <div className="flex items-center justify-center">
+              <HomeIcon className="size-5 mr-2" />
+              <a
+                href="#home"
+                className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
+              >
+                Home
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <UserIcon className="size-5 mr-2" />
+
+              <a
+                href="#about"
+                className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
+              >
+                About
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <FolderIcon className="size-5 mr-2" />
+
+              <a
+                href="#projects"
+                className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
+              >
+                Projects
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <PhoneIcon className="size-5 mr-2" />
+              <a
+                href="#contact"
+                className="text-[#eff8f7] duration-300 border-b-2 border-transparent hover:border-[#eff8f7]"
+              >
+                Contact
+              </a>
+            </div>
           </div>
         </div>
       </div>

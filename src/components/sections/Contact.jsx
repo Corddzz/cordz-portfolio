@@ -81,12 +81,14 @@ const Contact = () => {
                 }
               />
             </div>
-            <button
-              type="submit"
-              className="w-full bg-[#ef4442] text-[#eff8f7] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 hover:shadow-[#ef4442]/50 hover:shadow-lg"
-            >
-              Send Message
-            </button>
+            <div className="flex items-center justify-center p-3 my-3">
+              <button
+                type="submit"
+                className="w-sm bg-[#ef4442] text-[#eff8f7] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 hover:shadow-[#ef4442]/50 hover:shadow-lg"
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </RevealOnScroll>

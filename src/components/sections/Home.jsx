@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-evenly relative bg-[#1f284d] sm:flex-col lg:flex-row"
+      className="min-h-screen flex items-center justify-evenly relative bg-[#1f284d] sm:flex-col lg:flex-row max-[639px]:flex-col"
     >
       <RevealOnScroll>
         <div className="sm:mb-3 sm:mt-25 lg:mt-0">

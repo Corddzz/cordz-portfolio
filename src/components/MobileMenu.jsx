@@ -1,3 +1,10 @@
+import {
+  HomeIcon,
+  UserIcon,
+  FolderIcon,
+  PhoneIcon,
+} from '@heroicons/react/24/outline'
+
 const MobileMenu = ({ menu, setMenu }) => {
   return (
     <div
@@ -18,42 +25,56 @@ const MobileMenu = ({ menu, setMenu }) => {
         &times;
       </button>
 
-      <a
-        href="#home"
-        onClick={() => setMenu(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+      <div className="flex items-center justify-center">
+        <HomeIcon className="size-5 mr-2" />
+        <a
+          href="#home"
+          onClick={() => setMenu(false)}
+          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
             ${menu ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}
             `}
-      >
-        Home
-      </a>
-      <a
-        href="#about"
-        onClick={() => setMenu(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+        >
+          Home
+        </a>
+      </div>
+      <div className="flex items-center justify-center">
+        <UserIcon className="size-5 mr-2" />
+
+        <a
+          href="#about"
+          onClick={() => setMenu(false)}
+          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
             ${menu ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}
             `}
-      >
-        About
-      </a>
-      <a
-        href="#projects"
-        onClick={() => setMenu(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+        >
+          About
+        </a>
+      </div>
+      <div className="flex items-center justify-center">
+        <FolderIcon className="size-5 mr-2" />
+
+        <a
+          href="#projects"
+          onClick={() => setMenu(false)}
+          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
             ${menu ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}
             `}
-      >
-        Projects
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setMenu(false)}
-        className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
+        >
+          Projects
+        </a>
+      </div>
+      <div className="flex items-center justify-center">
+        <PhoneIcon className="size-5 mr-2" />
+        <a
+          href="#contact"
+          onClick={() => setMenu(false)}
+          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300
             ${menu ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}
             `}
-      >
-        Contact
-      </a>
+        >
+          Contact
+        </a>
+      </div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ const App = () => {
   const [menu, setMenu] = useState(false)
   const [loading, setLoading] = useState(false)
   return (
-    <>
+    <div className="overflow-x-hidden">
       {!loading && <LoadingScreen onComplete={() => setLoading(true)} />}
       <div
         className={`min-h-screen transition-opacity duration-700 ${
@@ -26,7 +26,7 @@ const App = () => {
         <Projects />
         <Contact />
       </div>
-    </>
+    </div>
   )
 }
 

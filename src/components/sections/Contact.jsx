@@ -29,10 +29,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-20 bg-[#1f284d]"
+      className="min-h-screen flex items-center justify-center py-20 bg-[#1f284d] w-full"
     >
       <RevealOnScroll>
-        <div className="px-4 w-[500px]">
+        <div className="w-auto px-4 sm:w-[900px]">
           <h2 className="text-3xl font-bold mb-8 text-[#ef4442] text-center">
             Get In Touch
           </h2>
@@ -84,7 +84,7 @@ const Contact = () => {
             <div className="flex items-center justify-center p-3 my-3">
               <button
                 type="submit"
-                className="w-sm bg-[#ef4442] text-[#eff8f7] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 hover:shadow-[#ef4442]/50 hover:shadow-lg"
+                className="sm:max-w-[639px] bg-[#ef4442] text-[#eff8f7] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 hover:shadow-[#ef4442]/50 hover:shadow-lg"
               >
                 Send Message
               </button>

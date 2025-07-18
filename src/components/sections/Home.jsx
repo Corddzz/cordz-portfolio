@@ -8,11 +8,11 @@ const Home = () => {
       className="min-h-screen flex items-center justify-evenly relative bg-[#1f284d] sm:flex-col lg:flex-row max-[639px]:flex-col"
     >
       <RevealOnScroll>
-        <div className="sm:mb-3 sm:mt-25 lg:mt-0">
+        <div className="sm:mb-3 sm:mt-25 lg:mt-0 mt-25">
           <img
             src={imageProfile}
             alt="Profile"
-            className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer"
+            className="rounded-full size-96 shadow-xl shadow-black/50 hover:scale-110 duration-300 ease-in-out cursor-pointer max-sm:size-60"
           />
         </div>
       </RevealOnScroll>
